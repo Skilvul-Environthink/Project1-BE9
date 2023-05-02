@@ -27,7 +27,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 30px;
+  gap: 42px;
   padding: 10px 0;
 }
 
@@ -48,7 +48,7 @@ nav ul li a:hover {
   color: #ffffff;
   border-radius: 8px;
   margin-top: 8px;
-  padding: 5px 18px;
+  padding: 5px 20px;
   cursor: pointer;
   font-weight: bold;
 }
@@ -89,7 +89,7 @@ nav ul li a:hover {
   font-weight: semi-bold;
 }
 #content {
-  margin: 20px 8%;
+  margin: 20px 15%;
   padding-bottom: 20px;
 }
 #content h1 {
@@ -105,7 +105,7 @@ nav ul li a:hover {
 .artikel {
   display: flex;
   align-items: center;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 30px;
 }
 .artikel img {
@@ -138,4 +138,44 @@ nav ul li a:hover {
   border-radius: 8px;
   padding: 8px 22px;
   font-weight: semi-bold;
+}
+#banner {
+  min-width: auto;
+  /* display: flex; */
+  align-items: center;
+  background-image: url("../assets/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.judul {
+  text-align: center;
+  margin-top: 20px;
+  margin: 0 30%;
+  padding: 30px 20px;
+  color: white;
+}
+.judul h1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+.judul p {
+  font-size: 17px;
+}
+#isi-banner {
+  display: flex;
+  gap: 20px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 30px 14%;
+  margin-bottom: 20px;
+}
+.langkah img {
+  border-radius: 50%;
+}
+.langkah h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
