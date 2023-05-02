@@ -141,7 +141,6 @@ nav ul li a:hover {
 }
 #banner {
   min-width: auto;
-  /* display: flex; */
   align-items: center;
   background-image: url("../assets/hero2.jpg");
   background-repeat: no-repeat;
@@ -168,9 +167,12 @@ nav ul li a:hover {
   gap: 20px;
   color: white;
   text-align: center;
-  align-items: center;
   padding: 30px 14%;
-  margin-bottom: 20px;
+}
+.langkah {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .langkah img {
   border-radius: 50%;
@@ -178,4 +180,51 @@ nav ul li a:hover {
 .langkah h4 {
   font-size: 20px;
   padding-bottom: 10px;
+}
+
+.container {
+  background-color: #14ae5c;
+  color: white;
+  padding: 10px 7%;
+}
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.sosmed {
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.sosmed a {
+  color: white;
+}
+.sosmed a:hover {
+  color: #2727d8;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
 }
