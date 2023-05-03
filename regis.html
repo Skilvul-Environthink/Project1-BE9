@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="registrasi/regis.css">
+  
+  <link rel="stylesheet" href="registrasi/regis.json">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/XsS7sbz/logo.png" alt="logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#">Aksi</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a class="btnLogin" href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- FORM REGISTRASI -->
+    <form class="register-form">
+        <h2>Register</h2>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-register" onclick="registerUser(event)">Register</button>
+        </div>
+      </form>
+    </div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Tentang Environthink</h2>
+      <p> Environthink merupakan sebuah kata yang terdiri dari kata "environment" yang artinya lingkungan dan "think" yang artinya berpikir.</p>
+      <p>EnviroThink mengandung arti untuk berpikir secara lebih baik dan bijak tentang lingkungan dan keberlanjutan alam, serta bertindak untuk melindungi dan melestarikannya.</p>
+    </div>
+    <div class="col-md-6 contact-info">
+      <h2>Kontak Kami</h2>
+      <p>Environthink</p>
+      <p>Jl. In Aja Dulu No. 63B, Jakarta Suka-Suka</p>
+      <p>Email: info@Environthink.org</p>
+      <p>Telepon: 08929393986</p>
+    </div>
+  </div>
+  <hr>
+  <p>&copy; 2023 Environthink. All Rights Reserved.</p>
+</footer>
+<script src="registrasi/regis.js"></script>
+</body>
+</html>

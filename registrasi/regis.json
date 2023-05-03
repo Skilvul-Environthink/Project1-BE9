@@ -1,0 +1,30 @@
+[
+    {
+    "fullname": "fahmi1",
+    "email": "fahmi1@gmail.com",
+    "username": "fahmi1",
+    "password": "fahmi1",
+    "id": "1"
+    },
+    {
+    "fullname": "fahmi2",
+    "email": "fahmi2@gmail.com",
+    "username": "fahmi2",
+    "password": "fahmi2",
+    "id": "2"
+    },
+    {
+    "fullname": "fahmi3",
+    "email": "fahmi3@gmail.com",
+    "username": "fahmi3",
+    "password": "fahmi3",
+    "id": "3"
+    },
+    {
+    "fullname": "fahmi4",
+    "email": "fahmi4@gmail.com",
+    "username": "fahmi4",
+    "password": "fahmi4",
+    "id": "4"
+    }
+    ]
