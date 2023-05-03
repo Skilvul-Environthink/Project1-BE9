@@ -6,9 +6,6 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-/* main {
-  margin-bottom: 480px;
-} */
 header {
   display: flex;
   justify-content: space-around;
@@ -52,14 +49,18 @@ nav ul li a:hover {
   cursor: pointer;
   font-weight: bold;
 }
+#hamburger-menu {
+  display: none;
+}
 #hero {
   min-height: 80vh;
+  width: 100%;
   display: flex;
   align-items: center;
   background-image: url("../assets/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
 }
 #headline {
@@ -227,4 +228,17 @@ hr {
   border: none;
   border-top: 1px solid #ccc;
   margin-bottom: 20px;
+}
+
+/* Responsive Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* Responsive Handphone */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
