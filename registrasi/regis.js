@@ -25,7 +25,7 @@ function registerUser(event) {
   .then(response => response.json())
   .then(json => {
     console.log(json);
-   window.location.href = "http://127.0.0.1:5500/Project1-BE9/log.html"; // ganti dengan halaman login yang sesuai
+   window.location.href = "log.html"; // ganti dengan halaman login yang sesuai
   })
   .catch(error => console.error(error));
 }
