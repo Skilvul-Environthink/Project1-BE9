@@ -9,6 +9,7 @@ body {
 .navbar {
   border-bottom: 3px solid whitesmoke;
   padding: 0px 13%;
+  z-index: 999;
 }
 .navbar-nav > li > a {
   font-size: 18px;
@@ -61,10 +62,9 @@ nav ul li a:hover {
 } */
 main {
   padding: 0 15%;
-  /* padding-top: 100px; */
+  padding-top: 90px;
 }
 .artikel-content h1 {
-  padding-top: 10px;
   text-align: left;
   font-size: 30px;
   font-weight: 600;
