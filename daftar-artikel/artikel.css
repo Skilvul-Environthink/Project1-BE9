@@ -74,12 +74,12 @@ hr {
   border-top: 1px solid #ccc;
   border-width: 5px;
 }
-#card-artikel {
+/* #card-artikel {
   justify-content: center;
   padding-bottom: 40px;
   display: flex;
   gap: 70px;
-}
+} */
 #cta-lanjut {
   margin-bottom: 40px;
 }
