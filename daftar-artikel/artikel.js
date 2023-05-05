@@ -12,11 +12,14 @@ fetch("artikel.json")
     data.forEach((item) => {
       //.slice(0, 3)
       // Membuat elemen card
-      const card = document.createElement("div");
-      card.classList.add("col-lg-4", "col-md-6");
+      // const card = document.createElement("div");
+      // card.classList.add("col-lg-4", "col-md-6");
+      // // card.style.marginLeft = "5px";
 
-      const containerCard = document.createElement("div");
-      card.classList.add("card");
+      const card = document.createElement("div");
+      card.classList.add("col-lg-4", "col-md-6", "card");
+      card.style.marginLeft = "10px";
+      card.style.width = "22rem";
 
       // Menambahkan gambar pada card
       const img = document.createElement("img");
@@ -27,6 +30,7 @@ fetch("artikel.json")
       // Menambahkan isi card
       const cardBody = document.createElement("div");
       cardBody.classList.add("card-body");
+      card.style.padding = "0px";
 
       const kategori = document.createElement("p");
       kategori.classList.add("card-text", "text-primary");
@@ -48,7 +52,7 @@ fetch("artikel.json")
       card.appendChild(img);
       card.appendChild(cardBody);
 
-      card.appendChild(containerCard);
+      // card.appendChild(containerCard);
       // Menambahkan card ke dalam daftar card
       daftarCard.appendChild(card);
 
