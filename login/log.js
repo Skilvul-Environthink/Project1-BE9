@@ -16,9 +16,10 @@ fetch('https://644f7899ba9f39c6ab6462c2.mockapi.io/API/V1/login')
       const user = data.find(item => item.USERNAME === username && item.PASSWORD === password);
       if (user) {
         console.log(user)
+        localStorage.setItem("user", JSON.stringify(user))
         alert("Login berhasil");
         // redirect ke halaman dashboard setelah login berhasil
-        window.location.href = "homelogin.html";
+        window.location.href = "/home.html";
       } else {
         alert("Username atau password salah");
       }
