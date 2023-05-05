@@ -29,3 +29,17 @@ nav ul li a:hover {
   text-decoration-color: #14ae5c;
   text-decoration-thickness: 2px;
 }
+main {
+  padding: 0 15%;
+  padding-top: 90px;
+}
+.aksi-headline h1 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  border-width: 5px;
+}
