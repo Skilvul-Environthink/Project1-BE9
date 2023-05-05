@@ -10,12 +10,6 @@ fetch("artikel.json")
 
     // Menggunakan loop untuk membuat card HTML untuk setiap objek dalam file JSON
     data.forEach((item) => {
-      //.slice(0, 3)
-      // Membuat elemen card
-      // const card = document.createElement("div");
-      // card.classList.add("col-lg-4", "col-md-6");
-      // // card.style.marginLeft = "5px";
-
       const card = document.createElement("div");
       card.classList.add("col-lg-4", "col-md-6", "card");
       card.style.marginLeft = "10px";
@@ -52,8 +46,6 @@ fetch("artikel.json")
       card.appendChild(img);
       card.appendChild(cardBody);
 
-      // card.appendChild(containerCard);
-      // Menambahkan card ke dalam daftar card
       daftarCard.appendChild(card);
 
       console.log(daftarCard);

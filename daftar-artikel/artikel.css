@@ -63,7 +63,6 @@ hr {
 
 .col-md-4 {
   width: 50%;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -79,6 +78,7 @@ p {
   margin-bottom: 15px;
 }
 .sosmed {
+  font-size: 22px;
   align-items: center;
   display: flex;
   gap: 50px;
