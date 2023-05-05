@@ -43,3 +43,51 @@ hr {
   border-top: 1px solid #ccc;
   border-width: 5px;
 }
+/* footer */
+.blok-footer {
+  background-color: #14ae5c;
+  color: white;
+  padding: 10px 7%;
+  margin-top: 50px;
+}
+.row #footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.sosmed {
+  font-size: 22px;
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.sosmed a {
+  color: white;
+}
+.sosmed a:hover {
+  color: #2727d8;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+}
