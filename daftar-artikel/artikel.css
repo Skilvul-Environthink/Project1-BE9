@@ -43,17 +43,12 @@ hr {
   border-top: 1px solid #ccc;
   border-width: 5px;
 }
-/* #card-artikel {
-  gap: 20px;
-} */
-#cta-lanjut {
-  margin: 40px 0px;
-}
 /* footer */
 .blok-footer {
   background-color: #14ae5c;
   color: white;
   padding: 10px 7%;
+  margin-top: 40px;
 }
 .row #footer {
   display: flex;
