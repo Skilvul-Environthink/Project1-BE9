@@ -19,7 +19,7 @@ fetch('https://644f7899ba9f39c6ab6462c2.mockapi.io/API/V1/login')
         localStorage.setItem("user", JSON.stringify(user))
         alert("Login berhasil");
         // redirect ke halaman dashboard setelah login berhasil
-        window.location.href = "/home-login/home-login.html";
+        window.location.href = "/home-login.html";
       } else {
         alert("Username atau password salah");
       }
