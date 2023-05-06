@@ -83,7 +83,7 @@ bacaSelanjutnya.textContent = "Baca Selengkapnya";
 
 // Menambahkan elemen link ke dalam card
 const link = document.createElement("a");
-link.href = "/detail-artikel/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
+link.href = "/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
 link.style.color = "black"; // Atur warna tulisan link menjadi hitam
 link.classList.add("text-decoration-none"); // Menambahkan kelas CSS "text-decoration-none" agar tidak ada underline pada link
 link.addEventListener("mouseover", () => {
