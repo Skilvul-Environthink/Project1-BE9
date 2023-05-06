@@ -67,7 +67,7 @@ fetch("aksi.json")
 
       // Menambahkan event listener pada elemen "Pelajari Selengkapnya"
       footer.addEventListener("click", () => {
-        window.location.href = "/detail-aksi/detail-aksi.html";
+        window.location.href = "/detail-aksi.html";
       });
 
       daftarCard.appendChild(card);
