@@ -1,7 +1,7 @@
 // Mengambil data dari file JSON menggunakan fetch API
 // import data from "./artikel.json" assert { type: "json" };
 // console.log(data);
-fetch("artikel.json")
+fetch("/daftar-artikel/artikel.json")
   .then((response) => response.json())
   .then((data) => {
     // Membuat sebuah variabel untuk menampung daftar card
@@ -43,8 +43,12 @@ fetch("artikel.json")
       cardBody.appendChild(judul);
       cardBody.appendChild(isi);
 
+      // Menambahkan link ke halaman detail-artikel
+      const link = document.createElement("a");
+      link.href = "/detail-artikel/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
+      link.appendChild(cardBody);
       card.appendChild(img);
-      card.appendChild(cardBody);
+      card.appendChild(link);
 
       daftarCard.appendChild(card);
 
