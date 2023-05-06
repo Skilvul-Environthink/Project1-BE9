@@ -1,6 +1,4 @@
 // Mengambil data dari file JSON menggunakan fetch API
-// import data from "./artikel.json" assert { type: "json" };
-// console.log(data);
 fetch("/daftar-artikel/artikel.json")
   .then((response) => response.json())
   .then((data) => {
@@ -38,26 +36,64 @@ fetch("/daftar-artikel/artikel.json")
       isi.classList.add("card-text", "text-secondary");
       isi.textContent = item.isi;
 
-      const lanjutan = document.createElement("p");
-      lanjutan.classList.add("card-title");
-      lanjutan.textContent = "Baca Selengkapnya>";
+      // Menambahkan tombol "Baca Selanjutnya"
+      const bacaSelanjutnya = document.createElement("button");
+      bacaSelanjutnya.classList.add("btn", "btn-primary", "mt-3");
+      bacaSelanjutnya.textContent = "Baca Selanjutnya";
 
-      // Menambahkan elemen-elemen ke dalam card
+      // Menambahkan elemen link ke dalam card
+      const link = document.createElement("a");
+      link.href = "/detail-artikel/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
+      link.style.color = "black"; // Atur warna tulisan link menjadi hitam
+      link.addEventListener("mouseover", () => {
+        link.style.color = "blue"; // Saat di-hover, ubah warna tulisan link menjadi biru
+      });
+      link.addEventListener("mouseout", () => {
+        link.style.color = "black"; // Saat keluar dari hover, ubah warna tulisan link menjadi hitam kembali
+      });
+      link.appendChild(bacaSelanjutnya);
       cardBody.appendChild(kategori);
       cardBody.appendChild(judul);
       cardBody.appendChild(isi);
-      cardBody.appendChild(lanjutan);
+      cardBody.appendChild(link);
 
-      // Menambahkan link ke halaman detail-artikel
-      const link = document.createElement("a");
-      link.href = "/detail-artikel/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
-      link.appendChild(cardBody);
+      // Menambahkan gambar dan card body ke dalam card
       card.appendChild(img);
-      card.appendChild(link);
+      card.appendChild(cardBody);
 
+      // Menambahkan event listener untuk redirect ke halaman detail-artikel saat card di klik
+      card.addEventListener("click", () => {
+        window.location.href = link.href;
+      });
+
+      // Menambahkan event listener untuk redirect ke halaman detail-artikel saat tombol "Baca Selanjutnya" di klik
+      bacaSelanjutnya.addEventListener("click", () => {
+        window.location.href = link.href;
+      });
+
+      // Menambahkan card ke dalam daftar card
       daftarCard.appendChild(card);
-
-      console.log(daftarCard);
     });
   })
   .catch((error) => console.error(error));
+// Menambahkan tombol "Baca Selanjutnya"
+const bacaSelanjutnya = document.createElement("button");
+bacaSelanjutnya.classList.add("btn", "btn-primary", "mt-3");
+bacaSelanjutnya.textContent = "Baca Selengkapnya";
+
+// Menambahkan elemen link ke dalam card
+const link = document.createElement("a");
+link.href = "/detail-artikel/detail-artikel.html"; // Atur href sesuai halaman detail-artikel yang ada di proyek Anda
+link.style.color = "black"; // Atur warna tulisan link menjadi hitam
+link.classList.add("text-decoration-none"); // Menambahkan kelas CSS "text-decoration-none" agar tidak ada underline pada link
+link.addEventListener("mouseover", () => {
+  link.style.color = "blue"; // Saat di-hover, ubah warna tulisan link menjadi biru
+});
+link.addEventListener("mouseout", () => {
+  link.style.color = "black"; // Saat keluar dari hover, ubah warna tulisan link menjadi hitam kembali
+});
+link.appendChild(bacaSelanjutnya);
+cardBody.appendChild(kategori);
+cardBody.appendChild(judul);
+cardBody.appendChild(isi);
+cardBody.appendChild(link);

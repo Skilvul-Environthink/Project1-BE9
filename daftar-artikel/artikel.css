@@ -64,6 +64,20 @@ hr {
   border-top: 1px solid #ccc;
   border-width: 5px;
 }
+a {
+  color: inherit; /* mengambil warna default dari parent element */
+  text-decoration: none; /* menghilangkan underline pada link */
+  transition: color 0.2s ease-in-out; /* membuat efek transisi pada warna */
+}
+
+a:hover {
+  color: blue; /* memberikan warna biru saat link di-hover */
+}
+
+.card-text {
+  color: black;
+}
+
 /* footer */
 .blok-footer {
   background-color: #14ae5c;
