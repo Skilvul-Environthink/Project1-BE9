@@ -12,12 +12,10 @@ const subMenu = document.createElement("li");
 
 logoutBtn.addEventListener("click", function () {
   console.log("Logout clicked");
-  window.location.href = "/Project1-BE9/log.html"; // redirect to logout page
+  window.location.href = "/log.html"; // redirect to logout page
 });
 
 // Mengambil data dari file JSON menggunakan fetch API
-// import data from "./aksi.json" assert { type: "json" };
-// console.log(data);
 fetch("aksi.json")
   .then((response) => response.json())
   .then((data) => {
@@ -58,24 +56,21 @@ fetch("aksi.json")
       footer.classList.add("card-title");
       footer.textContent = "Pelajari Selengkapnya";
 
-      //   const button = document.createElement("a");
-      //   button.classList.add("btn", "btn-success");
-      //   button.href = "#";
-      //   button.textContent = "Pelajari Selengkapnya";
-
       // Menambahkan elemen-elemen ke dalam card
       cardBody.appendChild(tittle);
       cardBody.appendChild(pendukung);
       cardFooter.appendChild(footer);
-      //   cardFooter.appendChild(button);
 
       card.appendChild(img);
       card.appendChild(cardBody);
       card.appendChild(cardFooter);
 
-      daftarCard.appendChild(card);
+      // Menambahkan event listener pada elemen "Pelajari Selengkapnya"
+      footer.addEventListener("click", () => {
+        window.location.href = "/detail-aksi/detail-aksi.html";
+      });
 
-      console.log(daftarCard);
+      daftarCard.appendChild(card);
     });
   })
   .catch((error) => console.error(error));
