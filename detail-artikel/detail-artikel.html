@@ -25,26 +25,52 @@
 />
 </head>
 <body>
-    <header>
-        <img src="/assets/logo.jpg" width="250" id="logo">
-        <nav>
-          <div class="navbar-nav">
-            <ul>
-              <li><a href="/home-login/home-login.html">Home</a></li>
-              <li><a href="/daftar-artikel/artikel.html">Artikel</a></li>
-              <li><a href="/aksi.html">Aksi</a></li>
-              <li class="avatar-wrapper">
-                <img src="https://api.iconify.design/mdi/user-circle.svg" alt="User Circle Icon">
-                <div class="dropdown-menu" id="dropdown-menu">
-                  <a href="#" id="logout-btn">Logout</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.ibb.co/tmXzJGB/logo.jpg" alt="logo" width="250" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/home-login/home-login.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/daftar-artikel/artikel.html">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/aksi.html" width="20px">Aksi</a>
+          </li>
+          <li class="avatar-wrapper">
+            <img
+              src="https://api.iconify.design/mdi/user-circle.svg"
+              alt="User Circle Icon"
+            />
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="#" id="logout-btn">Logout</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <button type="button" class="btn btn-success">Login</button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <!--artikel-->
+      <main>
       <section id="content">
         <h1>Detail Artikel</h1>
         <div class="artikel">
@@ -52,12 +78,13 @@
             <div class="isi">
                 <p class="kategori">Siaran Pers #50 Tahun #Aktivis #Laut</p>
                 <h4>Soroti Peran Indonesia dalam Perlindungan Laut Global, Aktivis Greenpeace Desak Komitmen Pemerintah</h4>
-                <p>Peran Indonesia sebagai negara kepulauan terbesar di dunia sangat vital dalam upaya mewujudkan target 30x30 ini. Dan tahun 2030 tinggal tujuh tahun lagi. 
+                <p class="detail">Peran Indonesia sebagai negara kepulauan terbesar di dunia sangat vital dalam upaya mewujudkan target 30x30 ini. Dan tahun 2030 tinggal tujuh tahun lagi. 
                 Apabila target ini tidak tercapai, Indonesia akan menjadi salah satu negara yang mengalami dampak kerusakan lingkungan paling parah.Organisasi lingkungan hidup, Greenpeace, mendesak komitmen pemerintah dalam menjaga dan melestarikan laut Indonesia. Pemerintah harus memperkuat regulasi terhadap industri yang beroperasi di laut, termasuk penangkapan ikan yang tidak berkelanjutan dan pembuangan sampah plastik ke laut.Selain itu, Greenpeace juga menekankan pentingnya pengurangan emisi karbon dioksida dan upaya mitigasi perubahan iklim untuk melindungi ekosistem laut dari kerusakan lebih lanjut.Sebagai negara kepulauan, Indonesia memiliki tanggung jawab besar dalam menjaga keberlangsungan ekosistem laut. 
                 Diperlukan kerja sama antara pemerintah, masyarakat, dan industri untuk mewujudkan perlindungan laut global yang lebih baik dan berkelanjutan.Organisasi lingkungan hidup, Greenpeace, mendesak komitmen pemerintah dalam menjaga dan melestarikan laut Indonesia. Pemerintah harus memperkuat regulasi terhadap industri yang beroperasi di laut, termasuk penangkapan ikan yang tidak berkelanjutan dan pembuangan sampah plastik ke laut.Selain itu, Greenpeace juga menekankan pentingnya pengurangan emisi karbon dioksida dan upaya mitigasi perubahan iklim untuk melindungi ekosistem laut dari kerusakan lebih lanjut.Sebagai negara kepulauan, Indonesia memiliki tanggung jawab besar dalam menjaga keberlangsungan ekosistem laut.Diperlukan kerja sama antara pemerintah, masyarakat, dan industri untuk mewujudkan perlindungan laut global yang lebih baik dan berkelanjutan. </p>
             </div>
         </div>
         </section>
+      </main>
       <!--footer-->     
       <footer>
         <section class="blok-footer">

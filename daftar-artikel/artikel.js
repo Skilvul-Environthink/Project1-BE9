@@ -38,10 +38,15 @@ fetch("/daftar-artikel/artikel.json")
       isi.classList.add("card-text", "text-secondary");
       isi.textContent = item.isi;
 
+      const lanjutan = document.createElement("p");
+      lanjutan.classList.add("card-title");
+      lanjutan.textContent = "Baca Selengkapnya>";
+
       // Menambahkan elemen-elemen ke dalam card
       cardBody.appendChild(kategori);
       cardBody.appendChild(judul);
       cardBody.appendChild(isi);
+      cardBody.appendChild(lanjutan);
 
       // Menambahkan link ke halaman detail-artikel
       const link = document.createElement("a");
