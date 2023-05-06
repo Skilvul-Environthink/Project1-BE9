@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.navbar {
+  border-bottom: 3px solid whitesmoke;
+  z-index: 999;
+}
+.navbar .container {
+  padding: 0px 7%;
+}
+.navbar-nav > li > a {
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+  padding: 10px 0;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #14ae5c;
+  text-decoration-thickness: 2px;
+}
+.avatar img {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 120px;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-wrapper:hover .dropdown-menu {
+  display: block;
+}
+main {
+  padding: 0 15%;
+  padding-top: 90px;
+}
+.artikel-content h1 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  border-width: 5px;
+}
+a {
+  color: inherit; /* mengambil warna default dari parent element */
+  text-decoration: none; /* menghilangkan underline pada link */
+  transition: color 0.2s ease-in-out; /* membuat efek transisi pada warna */
+}
+
+a:hover {
+  color: blue; /* memberikan warna biru saat link di-hover */
+}
+
+.card-text {
+  color: black;
+}
+
+/* footer */
+.blok-footer {
+  background-color: #14ae5c;
+  color: white;
+  padding: 10px 7%;
+  margin-top: 40px;
+}
+.row #footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.sosmed {
+  font-size: 22px;
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.sosmed a {
+  color: white;
+}
+.sosmed a:hover {
+  color: #2727d8;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
+}
